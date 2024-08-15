@@ -130,7 +130,7 @@ function App() {
             </button>
           </form>
         </div>
-        <div className="bg-white rounded bg-slate-100 p-2 w-80 h-auto">
+        <div className=" rounded bg-slate-100 p-2 w-80 h-auto">
           {message && (
             <div className="message">
               <p>{message}</p>
