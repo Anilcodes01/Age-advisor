@@ -95,8 +95,8 @@ function App() {
   };
 
   return (
-    <div className="flex justify-center bg-sky-400 h-screen items-center">
-      <div className=" flex w-96  items-center justify-center flex-col gap-4">
+    <div className="flex  justify-center bg-sky-400 h-screen items-center">
+      <div className=" flex border w-96 p-5 bg-white rounded  items-center justify-center flex-col gap-4">
         <div className="flex flex-col gap-8 ">
           <div className="text-3xl font-bold">Age Bracket Wisdom</div>
           <form
@@ -106,7 +106,7 @@ function App() {
             <label className="text-lg">
               Enter your age:
               <input
-                className="outline-none pl-2 ml-2  w-20 rounded"
+                className="outline-none bg-slate-100 pl-2 ml-2  w-20 rounded"
                 type="number"
                 value={age}
                 onChange={handleChange}
@@ -114,7 +114,7 @@ function App() {
             </label >
             <label className="text-lg">
               Select tone:
-              <select className="rounded outline-none ml-2" value={tone} onChange={handleToneChange}>
+              <select className="rounded bg-slate-100 outline-none ml-2" value={tone} onChange={handleToneChange}>
                 <option value="jackie">Jackie Shroff</option>
                 <option value="jessie">Jesse Pinkman</option>
                 <option value="batman">Batman</option>
@@ -130,7 +130,7 @@ function App() {
             </button>
           </form>
         </div>
-        <div className="bg-white rounded p-2 w-80 h-auto">
+        <div className="bg-white rounded bg-slate-100 p-2 w-80 h-auto">
           {message && (
             <div className="message">
               <p>{message}</p>
